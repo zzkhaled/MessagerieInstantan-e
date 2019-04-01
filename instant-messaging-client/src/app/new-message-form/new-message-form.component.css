@@ -1,0 +1,11 @@
+.fixed-input {
+    position: fixed;
+    bottom: 50px;
+    left: 270px;
+    right: 270px;
+    width: 61.5%;
+    height: 50px;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 3px; 
+}

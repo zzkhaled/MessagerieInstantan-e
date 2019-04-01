@@ -1,0 +1,29 @@
+
+
+
+<!--<div *ngFor="let client of service.getClients()">
+    <p>{{message.author}}
+        {{client.username}} </p>
+   
+      <p>{{ username == message.author }} {{username}} {{message.author}}</p>-->
+
+    <div *ngIf="message.author == username" class="col-xs-6 col-md-6">
+     <div class="alert alert-success">
+      <span class="glyphicion glyphicion-ok"><strong>{{message.author}}</strong></span>({{message.date | date:'short'}})
+       <hr class="message-inner-separator">
+      <p>{{message.content}} </p> 
+     </div>
+    </div>
+
+   <div *ngIf="message.author != username"  class="row">
+
+    <div class="col-xs-6 col-md-6"></div> 
+    <div class="col-xs-6 col-md-6" >
+    <div class="alert alert-danger">
+     
+      <span class="glyphicion glyphicion-ok"><strong>{{message.author}}</strong></span>  ({{message.date | date:'short'}})
+      <hr class="message-inner-separator">
+      <p>{{message.content}} </p> 
+    </div> 
+  </div>
+</div>

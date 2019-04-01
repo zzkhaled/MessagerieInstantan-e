@@ -1,0 +1,67 @@
+.salon-list{
+  position:fixed;
+  width: 20%;
+  height: 100%;
+  background-color: #607D8B;
+}
+.text2 {
+  position: relative;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .salons {
+    list-style-type: none;
+    padding: 0;
+    width: 17em;
+    height: 20px;
+  }
+  .salons li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 3em;
+    border-radius: 4px;
+  }
+  .salons li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .salons li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .salons .text {
+    position: relative;
+    top: 1px;  
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    
+  }
+  
+  .salons .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(139, 96, 96);
+    line-height: 1em;
+    width: 40px;
+    position: relative;
+    left: 5px;
+    height: 3em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }

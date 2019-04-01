@@ -1,0 +1,12 @@
+
+
+<div  [hidden]="!service.isLogged()" class="input-group input-group-lg fixed-input">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">Message</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" 
+        type="text" (keyup.enter)="send()" [(ngModel)]="content" placeholder="Tchater...">
+  </div>
+
+
+  

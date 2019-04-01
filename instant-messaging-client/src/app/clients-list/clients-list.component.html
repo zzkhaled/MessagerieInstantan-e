@@ -1,0 +1,9 @@
+<div  class="clients-list" [hidden]="!service.isLogged()"><br>
+  <h5 class="text-white text2"> <b>UTILISATEURS</b></h5><br>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item list-group-item-secondary" *ngFor="let client of service.getClients() " > 
+      <strong>{{client.username}} </strong><figure class="circle"></figure><br>
+      <span class="dateClient"> connecté à {{client.date | date:'shortTime'}}</span>
+    </li>
+  </ul>
+</div>

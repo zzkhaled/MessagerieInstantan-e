@@ -1,0 +1,5 @@
+<div class= "fixed-input" [hidden]="!service.isLogged()">
+    <input type="file" #Image (change)= "onFileSelected($event)" />
+    <img [src]="url" width="40">
+    <button class="btn btn-primary" type="submit"  (click)= "onUpload()" [disabled]="Image.value==''">Upload</button>
+</div>

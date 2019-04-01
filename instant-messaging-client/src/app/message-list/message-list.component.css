@@ -1,0 +1,11 @@
+.message-list {
+    position:fixed;
+    top:102px;
+    bottom: 100px;
+    left:0px;
+    right:260px;
+    left: 270px;
+    padding:5px;
+    overflow-y: scroll;
+    border-left: 1px solid gray;
+}

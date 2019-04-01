@@ -1,0 +1,14 @@
+
+<div [hidden]="!service.isLogged()"  class= "salon-list"><br>
+
+  <h5 class="text-white text2"  > <b>SALONS DE DISCUSSION</b></h5><br>
+    <ul class="salons">
+      <li class="list-group-item list-group-item-secondary text" *ngFor="let salon of salons" 
+        [class.selected]="salon === selectedSalon"
+        (click)="onSelect(salon)">
+        <span class="badge">{{salon.id}}</span> {{salon.name}}
+      </li>
+    </ul>
+</div>
+
+

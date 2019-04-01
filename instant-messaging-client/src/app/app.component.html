@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!--<app-message-list [messages1]="messages"></app-message-list>  messages1 fait réference au 
+  tableau de message dans le compasant messageliste à l'aide de @input 
+<app-new-message-form (sendMessage)="sendMessage($event)"></app-new-message-form> -->
+
+<app-header></app-header>
+  <div class="row">
+    <div class="col-sm">
+      <app-salon-list></app-salon-list>
+    </div>
+    <div class="col-lg-7">
+      <app-message-list></app-message-list>
+      <app-new-message-form></app-new-message-form>
+      <app-new-image-form></app-new-image-form>
+      <app-login-form></app-login-form>
+    </div>
+    <div class="col-sm ">
+      <app-clients-list></app-clients-list>
+    </div>
+  </div>
+
